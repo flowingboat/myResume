@@ -1,0 +1,112 @@
+
+@media (min-width: 768px){
+	nav .container {
+	    width: 750px;
+	}
+	.more_select {
+		display: none;
+	}
+}
+@media (min-width: 992px){
+	nav .container {
+		width: 970px;
+	}
+	#skill .skillbox {
+			width: 25%
+		}
+	
+}			
+@media (min-width: 1200px){
+	nav .container {
+	    width: 1170px;
+	}
+}
+@media only screen and (max-width:1224px){
+	#myIntro h1 {
+		font-size: 55px;
+	}
+	#myIntro h3 {
+		font-size: 20px;
+		margin: 20px 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#experience .contentBox {
+		width: 50%;
+		
+	}
+	#experience .data-box {
+		left: 0;
+		margin-left: 0;
+	}
+	#experience .my-ep .my-ep-box {
+		/* float: left; */
+		margin-left: 160px;
+	}
+	#experience .my-ep .my-work-box {
+		float: left;
+	}
+	#experience .my-ep .my-school-box {
+		text-align: left;
+	}
+	#experience .my-ep::before{
+		left: 85px;
+	}
+	
+}
+@media only screen and (max-width: 768px){
+	nav .container .nav-ul {
+		display: none;
+	}
+	nav .container .more_nav {
+		display: block;
+		cursor: pointer;
+	}
+	
+	#experience .contentBox {
+		width: 80%;
+		
+	}
+	#works img {
+		width:230px;
+	}
+}
+@media only screen and (max-width:415px){
+	#myIntro h1 {
+		font-size: 28px;
+	}
+	#myIntro h3 {
+		font-size: 16px;
+	}
+	#myIntro span {
+		font-size: 14px;
+		height: 35px;
+		line-height: 33px;
+		width: 200px;
+	}
+	section h2 {
+		padding-top: 90px
+	}
+	section hr {
+		margin-bottom: 20px;
+	}
+	#experience .contentBox {
+		width: 100%;
+	}
+	#experience .data-box {
+		width: 100px;
+		height: 100px;
+	}
+	#experience .data-box p {
+		font-size: 14px;
+		line-height: 15px;
+	}
+	#experience .my-ep .my-ep-box {
+		margin-left: 105px;
+		margin-top: 60px;
+	}
+	#experience .my-ep::before{
+		left: 65px;
+	}
+}
