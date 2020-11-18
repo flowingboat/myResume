@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="keywords" content="web前端个人简历,web前端,简历,前端个人博客,前端工程师">
+		<meta name="description" content="WEB前端工程师的个人简历">
+		<title>前端简历</title>
+		
+		<style type="text/css">
+			/* 基本样式 */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #f8f0f6;
+				font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB'
+				 , \\5B8B\4F53, sans-serif;
+				color: #2c3e50;
+				font-size: 16px;
+			}
+			.fl { float: left;}
+			.fr { float: right;}
+			h1,h2,h3 {
+				margin: 20px 0 10px 0;
+			}
+			section {
+				
+				width: 100%;
+				height: 100vh;
+				padding-bottom: 20px;
+				/* border: solid 1px #000000 ; */
+				
+			}
+			.center {
+				text-align: center;
+			}
+			li {
+				list-style: none;
+			}
+			.contentBox {
+				position: relative;
+				max-width: 1200px !important;
+				
+				overflow: hidden;
+				padding: 0 15px;
+				margin: 0 auto;
+			}
+			.ptitle {
+				color: #E87E04;
+				margin: 2em 0 1em;
+				font-size: 16px;
+				font-family: "SimHei";
+				/* text-align: center; */
+				letter-spacing: 2px;
+			}
+			/* 首页样式 */
+			#home .back-img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				z-index: -1;
+			}
+			.back-img li{
+				position: absolute;
+				width: 100%;
+				height: 100vh;
+				background: url(./img/shuicai_beijing-001.jpg) no-repeat center;
+				background-size: cover;
+			}
+			#home {
+				opacity: 80%;
+			}
+			#myIntro h1 {
+				font-family: cursive,'Lato', sans-serif;
+				font-size: 70px;
+				margin-bottom: 30px;
+				font-weight: 200;
+			}
+			#myIntro h3 {
+				font-size: 30px;
+				margin: 40px 0;
+				font-weight: 400;
+			}
+			#myIntro {
+				padding-top: 35vh;
+				text-align: center;
+				
+			}
+			#myIntro span {
+				font-size: 20px;
+				font-weight: 300;
+				width: 150px;
+				height: 50px;
+				margin: 5px;
+				display: inline-block ;	
+				border: solid 1px #2c3e50;
+				cursor: pointer;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 5px;
+				
+			}
+			#myIntro span:hover {
+				
+				
+				
+				transform: scale(1.05);
+				transition: transform .5s;
+			}
+			.active .fade_in1 {
+				transition: all 1s 0s;
+			}
+			.active .fade_in2 {
+				transition: all 1s 0.5s;
+			}
+			.active .fade_in3 {
+				transition: all 1s 1s;
+			}
+			/* 关于我样式 */
+			nav {
+				width: 100%;
+				height: 70px;
+				background-color: #4c6e90;
+				
+				color: #e7f5fbfa;
+				
+			}
+			.navFix {
+				position: fixed;
+				top: 0;
+				z-index: 999;
+			}
+			.container {
+				
+				padding: 0 15px;
+				height: 70px;
+				/* max-width: 1200px;
+				min-width: 750px; */
+				margin: 0 auto;
+				
+			}
+			/* .container::before{
+				content: "杨友缘个人简历";
+				float: left;
+				line-height: 70px;
+			} */
+			nav .container div{
+				font-weight: bold;
+				line-height: 70px;
+				color: #F5F5F5;
+				
+			}
+			.nav-ul li {
+				float: left;
+				width: 100px;
+				line-height: 70px;
+				cursor: pointer;
+				text-align: center;
+			}
+			.nav-ul li:hover, .nav-ul li.active {
+			    color: #E87E04;
+			}
+			nav .container .more_nav, .more_select {
+				display: none;
+			}
+			.more_select {
+				position: absolute;
+				z-index: 1;
+				width: 100%;
+				background-color: #2c3e50;
+				padding-bottom: 1em;
+				transition: all .5s;
+			}
+			.more_select li{
+				width: 100%;
+				height: 3em;
+				text-align: center;
+				line-height: 3em;
+				
+				
+				cursor: pointer;
+			}
+			.more_select li:hover, .more_select li.active {
+				color: #E87E04;
+			}
+			.more_select li:first-child{
+				border-top: 1px solid #555
+			}
+			.more_display {
+				display: block;
+			}
+			section h2 {
+				font-size: 30px;
+				padding-top: 150px;
+				text-align: center;
+				letter-spacing: 2px;
+				font-weight: 500;
+			}
+			section hr {
+				width: 70px;
+				text-align: center;
+				height: 4px;
+				margin: 0 auto ;
+				background-color: #E87E04;
+				margin: 0 auto 80px;
+			}
+			#about img {
+				/* display: block; */
+				position: relative;
+				top: -40px;
+				max-width: 200px;
+				width: 40%;
+				
+				
+			}
+			#about .center p{
+				position: relative;
+				height: 200px;
+				overflow: hidden;
+			}
+			.my-info {
+				max-width: 850px;
+				margin: 28px auto 0 auto;
+			}
+			.my-info p {
+
+				padding: 0 2em;
+				text-indent: 2em;
+				line-height: 30px;
+				
+			}
+			/* 我的经历样式 */
+			#experience {
+				background: url(./img/shuicai_beijing-004.jpg) no-repeat center;
+				background-attachment: fixed;
+				background-size: cover;
+				opacity: 75%;
+				
+			}
+			#experience .my-ep li {
+				position: relative;
+				overflow: hidden;
+			}
+			#experience .my-ep li:not(:first-child) {
+				margin-top: 80px;
+			}
+			/* #experience .my-ep li div {
+				display: inline-block;
+			} */
+			#experience .my-ep::before {
+				content: '';
+				position: absolute;
+				background-color: #eee;
+				width: 2px;
+				height: 100%;
+			}
+			#experience .my-ep .my-school-box {
+				width: 40%;
+				text-align: right;
+			}
+			#experience .my-ep .my-work-box {
+				width: 40%;
+				float: right;
+				text-align: left;
+			}
+			#experience .my-ep li>div:last-child {
+				padding: 1em 0 0;
+			}
+			#experience .data-box {
+				width: 150px;
+				height: 150px;
+				border: 1px solid #eee;
+				background: #fff;
+				border-radius:  50%;
+				padding-top: 30px;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -75px;
+			}
+			
+			#experience .data-box p {
+				text-align: center;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 30px;
+			}
+			#experience .my-ep .ptitle {
+				margin: 0.5em 0;
+			}
+			#experience .my-ep .my-ep-box {
+				height: 150px;
+				padding-bottom: 40px;
+				padding-top: 1em;
+			}
+			
+			/* 我的技能样式 */
+			
+			#skill .skillbox {
+				/* background-color: beige; */
+				float: left;
+				width: 50%;
+				/* border: 1px solid #000000; */
+			}
+			
+			.circle-wrap, .wrapbox {
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+			}
+			#skill .skillbox .wrapbox{
+				position: relative;
+				margin: 0 auto;
+			}
+			.circle-wrap {
+				
+				border: 10px solid #ddd;
+			}
+			.circle-wrap .left-c, .circle-wrap .right-c {
+				position: absolute;
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+				border: 10px solid #2c3e50;
+				clip: rect(0, 70px, 140px, 0);
+				top: -1px;
+				left: -1px;
+				
+			}
+			.circle-wrap .right-c {
+				transform: rotate(180deg);
+			}
+			.circle-num {
+				position: absolute;
+				width: 120px;
+				height: 120px;
+				line-height: 120px;
+				top: 10px;
+				left: 10px;
+				background-color: white;
+				border-radius: 50%;
+				z-index: 1;
+				
+			}
+			/* 作品样式 */
+			#works {
+				background: url(./img/shuicai_beijing-005.jpg) no-repeat center;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+			#works img {
+				width:330px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="responsive.css"/>
+	</head>
+	<body>
+		<div id="content">
+			<div id="contaniner">
+				<section id="home" class="active">
+					<ul class="back-img">
+						<li></li>
+					</ul>
+					<div id="myIntro">
+						<h1 class="fade fade_in1">您好，我是杨友缘</h1>
+						<h3 class="fade fade_in2">一个初级前端工作人员</h3>
+						<span onclick="abtClick()">关于我</span>
+						<span>联系我</span>
+						
+					</div>
+				</section>
+				<section id="about">
+					<nav>
+						<div class=" container">
+							<a href="#">
+								<div class="fl">杨友缘个人简历</div>
+							</a>
+							<ul class="nav-ul fr">
+								<li>关于我</li>
+								<li>我的经历</li>
+								<li>技能掌握</li>
+								<li>联系我</li>
+							</ul>
+							<div class="more_nav fr">
+								更多
+							</div>
+						</div>
+						<div>
+							<ul class="more_select">
+								<li>关于我</li>
+								<li>我的经历</li>
+								<li>技能掌握</li>
+								<li>联系我</li>
+							</ul>
+						</div>
+					</nav>
+					<h2>关于我</h2>
+					<hr>
+					<div class="center contentBox">
+						<p class="center"><img src="img/3.jpg"></p>
+					</div>
+					<div class="my-info">
+						<p>您好我是杨友缘,今年23岁。大学专业学的是数字媒体技术，在大学期间对前端技术就有所了解，
+						但毕业后对自己的工作方向不是很明确，于是做起了吉他老师。
+						在工作的这一年之中，通过进一步了解我觉得前端技术还是比较适合我，
+						于是用空余时间复习回顾了下大学所学的知识，以及学习了其他一些前端有关技术。</p>
+					</div>
+				</section>
+				<section id="experience">
+					<h2>我的经历</h2>
+					<hr>
+					<div class="contentBox center">
+						<ul class="my-ep">
+							<li>
+								<div class="data-box">
+									<p>09/2015</p>
+									<p>-</p>
+									<p>06/2019</p>
+								</div>
+								<div class="my-school-box my-ep-box">
+									<strong>山东工商学院</strong>
+									<p class="ptitle">大学本科</p>
+									<p>四年期间中规中矩</p>
+								</div>
+							</li>
+							<li>
+								<div class="data-box">
+									<p>06/2019</p>
+									<p>-</p>
+									<p>09/20120</p>
+								</div>
+								<div class="my-work-box my-ep-box">
+									<strong>成都天韵吉他</strong>
+									<p class="ptitle">吉他老师</p>
+									<p>主要从事吉他及尤克里里教学</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section id="skill">
+					<h2>技能掌握</h2>
+					<hr>
+					<div class="contentBox center">
+						<div class="skillbox ht">
+							<div class="wrapbox">
+								<div class="circle-wrap">
+									<div class="left-c" style="transform: rotate(-90deg);"></div>
+									<div class="right-c"></div>
+								</div>
+								<div class="circle-num">
+									<span>75%</span>
+								</div>
+							</div>
+							<p class="ptitle">HTML5</p>
+						</div>
+						<div class="skillbox cs">
+							<div class="wrapbox">
+								<div class="circle-wrap">
+									<div class="left-c" style="transform: rotate(-90deg);"></div>
+									<div class="right-c"></div>
+								</div>
+								<div class="circle-num">
+									<span>75%</span>
+								</div>
+							</div>
+							<p class="ptitle">CSS3</p>
+						</div>
+						<div class="skillbox js">
+							<div class="wrapbox">
+								<div class="circle-wrap">
+									<div class="left-c" style="transform: rotate(-126deg);"></div>
+									<div class="right-c" ></div>
+								</div>
+								<div class="circle-num">
+									<span>65%</span>
+								</div>
+							</div>
+							<p class="ptitle">JS</p>
+						</div>
+						<div class="skillbox vu">
+							<div class="wrapbox">
+								<div class="circle-wrap">
+									<div class="left-c" style="transform: rotate(-108deg);"></div>
+									<div class="right-c" ></div>
+								</div>
+								<div class="circle-num">
+									<span>70%</span>
+								</div>
+							</div>
+							<p class="ptitle">Vue</p>
+						</div>
+					</div>
+				</section>
+				<section id="works">
+					<h2>联系我</h2>
+					<hr>
+					<div class="contentBox center">
+						<div class="erweima">
+							<img src="img/erweima.png" >
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			function getScroll(){
+			return {
+			left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+			top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+			}
+			}
+			var list = []
+			var sections = document.querySelectorAll('section')
+			
+			
+			var nav = document.getElementsByTagName('nav')[0]
+			var navLi = document.querySelectorAll('.nav-ul li')
+			var moreLi = document.querySelectorAll('.more_select li')
+			
+			var isMore = false
+			var moreBtn = document.querySelector('.more_nav')
+			var moreSelect = document.querySelector('.more_select')
+			
+			for(m=0; m<sections.length; m++){
+				list[m] = sections[m].offsetTop
+			}
+			// 首页0 关于1 经历2 技能3
+			
+			const parent1 = document.getElementsByClassName('nav-ul')[0]
+			
+			function scrollWidow(t) {
+				window.scrollTo({
+				    top: t,
+				    behavior: "smooth"
+				});
+			}
+			function abtClick() {
+				scrollWidow(list[1]+10)
+			}
+			function eventFn(e) {
+				const event = e || window.event
+				const target = event.target || event.srcElement
+				let text = target.innerHTML
+				switch (text) {
+				        case "关于我":
+				          scrollWidow(list[1]+10)
+				          break;
+				        case "我的经历":
+				          scrollWidow(list[2]+10)
+				          break;
+				        case "技能掌握": 
+						  scrollWidow(list[3]+10)
+				          break;
+						case "联系我":
+						  scrollWidow(list[4]+10)
+						  break;
+				      }
+			}
+			function eventFn2(e) {
+				const event = e || window.event
+				const target = event.target || event.srcElement
+				let text = target.innerHTML
+				switch (text) {
+				        case "关于我":
+				          scrollWidow(list[1]+10)
+				          break;
+				        case "我的经历":
+				          scrollWidow(list[2]+10)
+				          break;
+				        case "技能掌握": 
+						  scrollWidow(list[3]+10)
+				          break;
+						case "联系我":
+						  scrollWidow(list[4]+10)
+						  break;
+				      }
+				moreSelect.classList.remove('more_display')
+			}
+			function delegate(parent, type, eventFn) {
+				parent.addEventListener(type, eventFn, false)
+			}
+			delegate(parent1, 'click', eventFn)
+			delegate(moreSelect, 'click', eventFn2)
+			
+			// function remove
+			
+			moreBtn.addEventListener('click', function() {
+				moreSelect.classList.toggle('more_display')
+				isMore = !isMore
+			})
+			
+			window.addEventListener("scroll", function(e){
+				var isFix = false
+				var screen = getScroll().top
+				var navtop = list[1] - 20
+				if((navtop < screen) && !isFix){
+					nav.classList.add('navFix')
+					isFix = true
+				}
+				else{
+					nav.classList.remove('navFix')
+					isFix = false
+				}
+				if(!isMore) {
+					if((screen < list[1])){
+						navLi[0].classList.remove('active')
+					}else if((screen > list[1])&& (screen < list[2])){
+						navLi[0].classList.add('active')
+						navLi[1].classList.remove('active')
+					}else if((screen > list[2])&& (screen < list[3])){
+						navLi[0].classList.remove('active')
+						navLi[1].classList.add('active')
+						navLi[2].classList.remove('active')
+					}else if((screen > list[3])&& (screen < list[4])){
+						navLi[1].classList.remove('active')
+						navLi[2].classList.add('active')
+						navLi[3].classList.remove('active')
+					}else if((screen > list[4])){
+						navLi[2].classList.remove('active')
+						navLi[3].classList.add('active')
+					}}
+				// }else{
+				// 	if((screen < list[1])){
+				// 		moreLi[0].classList.remove('active')
+				// 	}else if((screen > list[1])&& (screen < list[2])){
+				// 		moreLi[0].classList.add('active')
+				// 		moreLi[1].classList.remove('active')
+				// 	}else if((screen > list[2])&& (screen < list[3])){
+				// 		moreLi[0].classList.remove('active')
+				// 		moreLi[1].classList.add('active')
+				// 		moreLi[2].classList.remove('active')
+				// 	}else if((screen > list[3])&& (screen < list[4])){
+				// 		moreLi[1].classList.remove('active')
+				// 		moreLi[2].classList.add('active')
+				// 		moreLi[3].classList.remove('active')
+				// 	}else if((screen > list[4])){
+				// 		moreLi[2].classList.remove('active')
+				// 		moreLi[3].classList.add('active')
+				// 	}
+				// }
+			})
+			
+			
+			
+			
+			
+
+		</script>
+	</body>
+</html>
